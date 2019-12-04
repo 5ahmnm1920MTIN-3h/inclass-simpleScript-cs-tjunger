@@ -32,9 +32,9 @@ public void Reset()
     btn_reset.interactable = false;
     result.text = "Result";
 }
-private int AddNumbers()
+private float AddNumbers()
 {
-    int tempResult = int.Parse(varA.text) - int.Parse(varB.text);
+    float tempResult = float.Parse(varA.text) - float.Parse(varB.text);
     return tempResult;
 }
 }
