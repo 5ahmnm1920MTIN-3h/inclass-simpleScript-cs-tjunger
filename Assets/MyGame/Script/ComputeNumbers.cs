@@ -7,11 +7,11 @@ using TMPro;
 
 public class ComputeNumbers : MonoBehaviour
 { 
-    public TextMeshProUGUI result;
-    public TMP_InputField varA;
-    public TMP_InputField varB;
-    public Button btn_reset;
-    public Button btn_sub_Numbers;
+    [SerializeField] private TextMeshProUGUI result;
+    [SerializeField] private TMP_InputField varA;
+    [SerializeField] private TMP_InputField varB;
+    [SerializeField] private Button btn_reset;
+    [SerializeField] private Button btn_sub_Numbers;
 
 public void SetResult()
 {
@@ -32,6 +32,7 @@ public void Reset()
     btn_reset.interactable = false;
     result.text = "Result";
 }
+
 private float AddNumbers()
 {
     float tempResult = float.Parse(varA.text) - float.Parse(varB.text);
