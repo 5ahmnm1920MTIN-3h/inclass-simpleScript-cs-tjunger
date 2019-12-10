@@ -15,22 +15,32 @@ public class ComputeNumbers : MonoBehaviour
 
 public void SetResult()
 {
+    // set the result from the SubtractNumbers Method
     result.text = SubstractNumbers().ToString();
+
+    // remove access from inputFields
     varA.interactable = false;
     varB.interactable = false;
+
+    // activate the now needed buttons
     btn_sub_Numbers.interactable = false;
     btn_reset.interactable = true;
 }
 
 public void Reset()
 {
+    // reset the all texts
     varA.text = "0";
     varB.text = "0";
+    result.text = resultText;
+
+    // give access to the inputfields again
     varA.interactable = true;
     varB.interactable = true;
+
+    // activate the now needed buttons
     btn_sub_Numbers.interactable = true;
     btn_reset.interactable = false;
-    result.text = resultText;
 }
 
 private float SubstractNumbers()
