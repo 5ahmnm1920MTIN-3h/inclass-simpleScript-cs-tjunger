@@ -4,7 +4,6 @@ using TMPro;
 
     
 
-
 public class ComputeNumbers : MonoBehaviour
 { 
     [SerializeField] private TextMeshProUGUI result;
