@@ -12,6 +12,7 @@ public class ComputeNumbers : MonoBehaviour
     [SerializeField] private TMP_InputField varB;
     [SerializeField] private Button btn_reset;
     [SerializeField] private Button btn_sub_Numbers;
+    private const string resultText = "Result";
 
 public void SetResult()
 {
@@ -30,7 +31,7 @@ public void Reset()
     varB.interactable = true;
     btn_sub_Numbers.interactable = true;
     btn_reset.interactable = false;
-    result.text = "Result";
+    result.text = resultText;
 }
 
 private float AddNumbers()
