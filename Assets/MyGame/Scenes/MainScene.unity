@@ -2072,8 +2072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   result: {fileID: 812795331}
-  varA: {fileID: 793873775}
-  varB: {fileID: 904421435}
+  InputField1: {fileID: 793873775}
+  InputField2: {fileID: 904421435}
   btn_reset: {fileID: 460706081}
   btn_sub_Numbers: {fileID: 1845300931}
 --- !u!1 &2047031525

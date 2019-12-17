@@ -45,7 +45,7 @@ public void Reset()
 
 private float SubstractNumbers()
 {
-    float tempResult = float.Parse(InputField1.text) - float.Parse(Inputfield2.text);
+    float tempResult = float.Parse(InputField1.text) - float.Parse(InputField2.text);
     return tempResult;
 }
 }
